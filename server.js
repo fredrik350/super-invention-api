@@ -85,7 +85,7 @@ app.get('/app', (req,res)=>{
 
 
 // email sending route
-app.post('  ', async (req,res)=>{
+app.post('/settoplas/:receivers_email/tbmarketing/', async (req,res)=>{
     try {
 
         const receiverEmail = req.params.receivers_email;
@@ -178,8 +178,7 @@ app.post('  ', async (req,res)=>{
         });
     
         res.json({
-            e: false,
-            m:'ok ok'
+            m:'Encryption'
         })
             
         } catch (error) {
